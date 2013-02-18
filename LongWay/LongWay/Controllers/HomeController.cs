@@ -12,7 +12,8 @@ namespace LongWay.Controllers
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            return View();
+            return RedirectToAction("Fear");
+            //return View();
         }
 
         public ActionResult About()
@@ -26,6 +27,11 @@ namespace LongWay.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Fear()
+        {
             return View();
         }
     }
